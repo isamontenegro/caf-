@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto - Kitty Café</title>
+
+  <!-- CSS -->
+  <link href="../css/produtos.css" rel="stylesheet">
+  <link href="../css/paginaproduto.css" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<main class="container-produto">
+
+  <!-- IMAGEM -->
+  <div class="box-img">
+    <img id="img-produto" onerror="this.src='../img/mocha.png'" alt="Produto">
+  </div>
+
+  <!-- INFO -->
+  <div class="box-info">
+
+    <span class="categoria">
+      <i class="fa-solid fa-cat"></i> Kitty Café
+    </span>
+
+    <h1 id="nome-produto"></h1>
+
+    <p id="preco-produto" class="preco"></p>
+
+    <div class="linha"></div>
+
+    <p id="desc-produto" class="descricao"></p>
+
+    <div class="botoes">
+      <button class="btn-pedir">
+        <i class="fa-solid fa-basket-shopping"></i> Pedir Agora
+      </button>
+      <button class="btn-fechar" onclick="window.close()">
+        Fechar
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+
+<script>
+  function getParametro(nome) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(nome);
+  }
+
+  const nomeProduto  = getParametro("nomeProduto");
+  const imgProduto   = getParametro("imgProduto");
+  const descProduto  = getParametro("descProduto");
+  const precoProduto = getParametro("precoProduto");
+
+  document.getElementById("nome-produto").textContent  = nomeProduto  || "Produto";
+  document.getElementById("img-produto").src           = imgProduto   || "../img/mocha.png";
+  document.getElementById("desc-produto").textContent  = descProduto  || "Deliciosa bebida do Kitty Café";
+  document.getElementById("preco-produto").textContent = precoProduto || "R$ 0,00";
+</script>
+
+</body>
+</html>

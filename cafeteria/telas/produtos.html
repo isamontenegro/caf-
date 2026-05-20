@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - Kitty Café</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/produtos.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER — igual ao contato -->
+
+<header>
+  <div class="header-content">
+
+    <div class="logo">
+      <i class="fa-solid fa-cat"></i>
+      Kitty Café
+    </div>
+
+    <nav>
+      <a href="../index.html">Início</a>
+      <a href="./produtos.html" class="ativo">Cardápio</a>
+      <a href="./contato.html">Contato</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero-cardapio">
+
+  <span class="tag">CARDÁPIO</span>
+
+  <h1>Nosso Cardápio</h1>
+
+  <p>
+    Explore nossas delícias preparadas com carinho — cada item é
+    uma experiência especial no Kitty Café.
+  </p>
+
+  <div class="filtro">
+    <button class="ativo">Todos</button>
+    <button>Cafés</button>
+    <button>Doces</button>
+    <button>Bebidas</button>
+  </div>
+
+</section>
+
+
+<!-- CARDS -->
+
+<main>
+
+  <div class="grid-cards">
+
+    <!-- Card 1 -->
+    <div class="card" onclick="abrirDetalhes('Expresso Felino','../img/expresso.png','Café expresso forte e aromático, feito com grãos selecionados.','R$ 9,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/expresso.png" alt="Expresso Felino">
+      </div>
+
+      <div class="card-body">
+        <h2>Expresso Felino</h2>
+        <p class="descricao-card">Café forte e aromático, feito com grãos selecionados.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 9,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="abrirDetalhes('Cappuccino Gatinho','../img/cappuccino.png','Cappuccino cremoso com leite vaporizado e espuma aveludada.','R$ 14,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/cappuccino.png" alt="Cappuccino Gatinho">
+      </div>
+
+      <div class="card-body">
+        <h2>Cappuccino Gatinho</h2>
+        <p class="descricao-card">Cremoso e suave, com espuma aveludada e leite vaporizado.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 14,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="abrirDetalhes('Mocha Ronronante','../img/mocha.png','Mocha intenso com chocolate belga e café premium.','R$ 16,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/mocha.png" alt="Mocha Ronronante">
+      </div>
+
+      <div class="card-body">
+        <h2>Mocha Ronronante</h2>
+        <p class="descricao-card">Intenso com chocolate belga e café premium da casa.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 16,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" onclick="abrirDetalhes('Cookie Patinha','../img/cookie.png','Cookie artesanal em formato de patinha, recheado de chocolate.','R$ 8,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/cookie.png" alt="Cookie Patinha">
+      </div>
+
+      <div class="card-body">
+        <h2>Cookie Patinha</h2>
+        <p class="descricao-card">Cookie artesanal em formato de patinha, recheado de chocolate.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 8,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" onclick="abrirDetalhes('Cheesecake Miau','../img/cheesecake.png','Cheesecake cremoso com calda de frutas vermelhas.','R$ 15,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/cheesecake.png" alt="Cheesecake Miau">
+      </div>
+
+      <div class="card-body">
+        <h2>Cheesecake Miau</h2>
+        <p class="descricao-card">Cheesecake cremoso com calda de frutas vermelhas feita no dia.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 15,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" onclick="abrirDetalhes('Milkshake Rosa','../img/milkshake.png','Milkshake de morango com chantilly e granulado felino.','R$ 18,00')">
+
+      <div class="card-img-wrapper">
+        <img src="../img/milkshake.png" alt="Milkshake Rosa">
+      </div>
+
+      <div class="card-body">
+        <h2>Milkshake Rosa</h2>
+        <p class="descricao-card">Milkshake de morango com chantilly e granulado especial.</p>
+        <div class="card-footer">
+          <span class="preco">R$ 18,00</span>
+          <button class="btn-ver">Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- FOOTER — igual ao contato -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-logo">
+      <i class="fa-solid fa-cat"></i>
+      <span>Kitty Café</span>
+    </div>
+
+    <p>© 2025 Kitty Café. Feito com ❤️ e muitos ronronados.</p>
+
+  </div>
+
+</footer>
+
+
+<!-- SCRIPT -->
+
+<script>
+  function abrirDetalhes(nome, imagem, descricao, preco) {
+    let url = `paginaproduto.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}&precoProduto=${encodeURIComponent(preco)}`;
+    window.open(url, "_blank", "width=800,height=700");
+  }
+
+  // Filtros
+  document.querySelectorAll('.filtro button').forEach(btn => {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.filtro button').forEach(b => b.classList.remove('ativo'));
+      this.classList.add('ativo');
+    });
+  });
+</script>
+
+</body>
+</html>
